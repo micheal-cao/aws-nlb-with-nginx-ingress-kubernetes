@@ -16,9 +16,13 @@ spec:
         paths:
         - path: /bluesvc
           backend:
-            serviceName: blue-svc
-            servicePort: 5678
+            service: 
+              name: blue-svc
+              port: 
+                number: 5678
         - path: /redsvc
           backend:
-            serviceName: red-svc
-            servicePort: 5678
+            service: 
+              name: red-svc
+              port: 
+                number: 5678
