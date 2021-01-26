@@ -7,11 +7,11 @@ metadata:
 spec:
   tls:
     - hosts:
-      - dev.k8s.eu-west-1.inforcloud.info	
+      - k8s.eu-west-1.inforcloud.info	
       # tls-secret should be created before applying ingress 
       secretName: tls-secret
   rules:
-    - host: dev.k8s.eu-west-1.inforcloud.info
+    - host: k8s.eu-west-1.inforcloud.info
       http:
         paths:
         - path: /bluesvc
