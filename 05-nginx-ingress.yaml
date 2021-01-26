@@ -15,12 +15,14 @@ spec:
       http:
         paths:
         - path: /bluesvc
+          pathType: Prefix
           backend:
             service: 
               name: blue-svc
               port: 
                 number: 5678
         - path: /redsvc
+          pathType: Prefix
           backend:
             service: 
               name: red-svc
